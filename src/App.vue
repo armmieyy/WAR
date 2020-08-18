@@ -1,18 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <img alt="vs logo" src="./assets/vs.png" />
+    <HelloWorld msg />
+    <h1>{{total}}</h1>
+    <div class="row">
+      <!---รีบค่า emit @cc แล้วส่งไปทำงานที่ function "sum"--->
+      <div class="col-12"><warzone start="start"/></div>
+        <Counter label="Wow" @cc="sum" />
+      </div>
+      </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import warzone from "./components/warzone.vue"
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+    warzone,
+  },
 }
 </script>
 
