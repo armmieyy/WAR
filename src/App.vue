@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="vs logo" src="./assets/vs.png" />
+    
     <HelloWorld msg />
     <h1>{{total}}</h1>
     <div class="row">
@@ -27,11 +27,18 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Russo One', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+body {
+  background-image: url(./assets/7Z.gif);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
 }
 </style>
