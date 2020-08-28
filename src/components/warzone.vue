@@ -11,13 +11,16 @@
     <div>
       <button v-bind:disabled="end" @click="randomspdamage()" class="btn btn-danger">SPECIAL ATTACK</button>
     </div>
-    <div class="row text-danger">
+    <div class="row text-light align-items-end">
       <div class="col-sm">
         <p>{{hpplayer}}</p>
         <p>{{nameplayer}}</p>
         <img :src="phoplayer" :height="hpplayer" />
       </div>
       <div class="col-sm">
+        <br />
+        <br />
+        <br />
         <br />
         <br />
         <img
@@ -70,7 +73,7 @@ export default {
         },
         {
           name: "Sakura",
-          Hp: 200,
+          Hp: 220,
           image:
             "https://cdn.discordapp.com/attachments/748191031870226462/748199994200162323/3.png",
         },
@@ -91,7 +94,7 @@ export default {
         },
         {
           name: "Kakuzu",
-          Hp: 200,
+          Hp: 220,
           image:
             "https://cdn.discordapp.com/attachments/748191031870226462/748203321080414419/pngegg_5.png",
         },
